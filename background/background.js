@@ -1,5 +1,6 @@
-chrome.alarms.onAlarm.addListener(function(alarm) {
-    if(alarm.name == 'alarm'){
+chrome.alarms.onAlarm.addListener(function(alarm) {         //executes when the countdown is over
+    if(alarm.name == 'alarm'){              
+
         chrome.alarms.clearAll()
         chrome.storage.sync.clear(function(){
             chrome.browserAction.setBadgeText({text: ''})
@@ -9,8 +10,8 @@ chrome.alarms.onAlarm.addListener(function(alarm) {
         beep.play();
         beep.volume = 0.2
         
-    }else{
-        chrome.storage.sync.get('myTime', function(data){
+    }else{                                                  //executes every minute     
+        chrome.storage.sync.get('myTime', function(data){       
             var hh = data.myTime[0]
             var mm = data.myTime[1]
             

@@ -24,7 +24,7 @@ function count(){
 
     time = [Number(hhIn.value), Number(mmIn.value)];
 
-    chrome.alarms.create('alarm', {delayInMinutes: minutes})
+    chrome.alarms.create('alarm', {delayInMinutes: minutes})            //sets the time of the countdown
 
     chrome.storage.sync.clear()
 
@@ -37,15 +37,7 @@ function count(){
 
     })
 
-    chrome.alarms.create('countDown', {periodInMinutes: 1})
-
-    chrome.runtime.sendMessage({
-        msg: "Start", 
-        function (response) {
-            console.log(response);
-
-        }
-    });
+    chrome.alarms.create('countDown', {periodInMinutes: 1})             //sets the period that system will calculate new value of hh and mm (background.js)
     window.close()
   
 }
@@ -55,6 +47,9 @@ function countConfig(){
     }else{
         count()
         
+        
+        //Config BadgeText
+
         if(hhIn.value > 0 && mmIn.value == 0){
             chrome.browserAction.setBadgeText({
                 text: hhIn.value + ':' + '00'
