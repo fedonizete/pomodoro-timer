@@ -37,7 +37,7 @@ function count(){
 
     })
 
-    chrome.alarms.create('countDown', {periodInMinutes: 1})             //sets the period that system will calculate new value of hh and mm (background.js)
+    chrome.alarms.create('countDown', {periodInMinutes: 1})             //sets the period that system will calculate new value of hh and mm(background.js)
     window.close()
   
 }
