@@ -4,9 +4,14 @@
 
 <br>
 
+<i>Study about the use of Chrome Extension and CSS variables<i/>
+  
+<br>
+
 <img src="https://user-images.githubusercontent.com/28262240/143971071-96c3999d-cd36-444e-b4e4-7628797045cd.gif">
 
-
+<br>
+<br>
 <br>
 <br>
 
@@ -14,6 +19,7 @@
 
 <img src="https://user-images.githubusercontent.com/28262240/143971735-198b00d3-aa31-43e7-8b07-4385ba796bd2.png">
 
+<br>
 <br>
 
 - Progress Bar
