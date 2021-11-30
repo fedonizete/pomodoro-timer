@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-## It's a Chrome extension that help you focus !
+## A Chrome extension that help you focus !
 
 <br>
 
