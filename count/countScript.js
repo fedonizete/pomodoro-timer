@@ -19,7 +19,7 @@ var alarm = 'alarm'
 
 
 function count(){
-        
+
     minutes = Number(hhIn.value) * 60 + Number(mmIn.value);
 
     time = [Number(hhIn.value), Number(mmIn.value)];
@@ -75,12 +75,14 @@ function reset(){
 }
 
 function checkKey(evt){
-    if(evt.keyCode == 13){                  // DOESN'T WORK !!!!
-        count()
-    }
+    
     if (evt.keyCode >= 58 || evt.keyCode <= 47){
-        evt.preventDefault()
+        if(evt.keyCode == 13){               
+            countConfig()
+        }else{
+            evt.preventDefault()
         verify = false
+        }  
     }else{
         verify = true
     }   
