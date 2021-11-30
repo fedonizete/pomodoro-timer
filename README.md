@@ -1,7 +1,8 @@
 # Pomodoro Timer
 
+## It's a Chrome extension that help you focus !
 
-
+<br>
 
 <img src="https://user-images.githubusercontent.com/28262240/143971071-96c3999d-cd36-444e-b4e4-7628797045cd.gif">
 
